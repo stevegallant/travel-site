@@ -20,10 +20,14 @@
     @mixin atSmall {
       display: inline-block;
       margin-left: 0;
-      margin-right: .5rem;
+      margin-right: 1.75rem;
       margin-bottom: 0;
+      transform: translateY(8px);
     }
   }
 
+  &--blue {
+    color: $mainBlue;
+  }
 
 }
