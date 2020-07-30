@@ -9,9 +9,10 @@
   &__text-content {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 0;
     width: 100%;
+    padding-top: 60px;
+    transform: translateY(-50%);
     text-align: center;
   }
 
