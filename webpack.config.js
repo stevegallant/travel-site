@@ -15,7 +15,7 @@ const postCSSPlugins = [
 ]
 
 // This class could be named anything, but here is used to copy the image
-// files over to dist folder
+// files over to dist folder during build task
 class RunAfterCompile {
   apply(compiler) {
     compiler.hooks.done.tap('Copy images', () => {
@@ -24,6 +24,7 @@ class RunAfterCompile {
   };
 }
 
+// Set up PostCSS
 let cssConfig = {
   test: /\.css$/i,
   use: ['css-loader?url=false', {loader: 'postcss-loader', options: {plugins: postCSSPlugins}}]

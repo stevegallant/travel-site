@@ -33,6 +33,7 @@ document.querySelectorAll(".open-modal").forEach(element => {
   });
 });
 
+// accept hot module replacement (updates to css/js on the fly)
 if (module.hot) {
   module.hot.accept();
 }
